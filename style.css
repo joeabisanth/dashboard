@@ -1,0 +1,141 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+body{
+    background: url(download\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    
+}
+.logo{
+    margin-left: 30px;
+    font-size:2rem;
+}
+.but{
+    border-radius: 20px;
+    height: 5vh;
+    position: relative;
+    right: 30px;
+    background-color: orangered;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    padding: 5px;
+    position: relative;
+    left: 100px;
+}
+nav{
+    z-index: 2;
+}
+ul li{
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.box2{
+   
+   position: relative; 
+   top: 150px;
+   text-align: center;
+    font-size: 2rem;
+    color:rgb(240, 190, 25);
+    z-index: 2;
+}
+
+.but2{
+    border-radius: 20px;
+    background-color: orangered;
+    
+    color: aliceblue;
+}
+.box3{
+   position: relative;
+   top: 300px;
+   color: aliceblue;
+   display: flex;
+   justify-content: space-between;
+   justify-content: space-around;
+}
+#bar{
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:768px) {
+   nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left:110%;
+    
+    background-color:rgba(0,0,0,1);
+    width: 100%;
+    height: 100vh;
+    transition: all 1s ease-in;
+    z-index: 2;
+   }
+   body{
+    width: 100%;
+    height: 100vh;
+   }
+    ul{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+      
+    }
+    .box2{
+        text-align: center;
+       z-index: 1;
+    }
+    body{
+        width: 100%;
+        height: 200vh;
+    }
+    .box3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .logo{
+       display: flex;
+       align-items: start;
+    }
+
+    #bar{
+        display: block;
+       padding: 20px;
+       align-items: end;
+
+    }
+    .but{
+      display: flex;
+      justify-content:end;
+      align-items:end;
+      
+     
+    }
+   #check{
+    display:none;
+   }
+   
+   #check:checked ~ nav{
+    left:0;
+   }
+}
